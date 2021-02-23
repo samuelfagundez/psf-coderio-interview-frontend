@@ -1,18 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Searchbar from '../../components/Timezones/Searchbar'
 import TimezoneBox from '../../components/Timezones/Box'
 import { Timezone } from '../../../shared/models/Timezone'
+import { AxiosInstanceContext } from '../../../shared/context/AxiosInstanceProvider';
 import '../../css/Timezones/PageStyles.css'
 
 const Timezones = () => {
 
+    const timezonesService = useContext(AxiosInstanceContext)
     const [timezones, setTimezones] = useState<Timezone[]>([])
-    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([{name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}, {name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}, {name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}, {name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}, {name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}])
+    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([])
 
     return (
         <>
             <div className="TimezonesContainer">
-                <Searchbar timezones={timezones} />
+                <Searchbar timezones={timezones} setSelectedTimezones={setSelectedTimezones} />
                 <div className="timezoneBoxesContainer">
                     {selectedTimezones.map((e: Timezone, i: number) => <TimezoneBox timezone={e} key={i} /> )}
                 </div>
