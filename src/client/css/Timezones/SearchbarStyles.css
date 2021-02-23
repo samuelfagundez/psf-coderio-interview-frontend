@@ -33,8 +33,18 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .searchBarContainer {
-    width: 90%;
-    padding-right: 16px;
+    .searchBarContainer {
+        width: 90%;
+    }
+    .inputTimezone {
+        min-width: 170px;
+    }
+}
+
+@media only screen and (max-width: 594px) {
+    .searchBarContainer {
+        position: relative;
+        left: -7px;
+        margin-bottom: 60px;
     }
 }
