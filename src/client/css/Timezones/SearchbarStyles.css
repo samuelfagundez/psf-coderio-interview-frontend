@@ -32,8 +32,9 @@
     left: 30px;
 }
 
-@media only screen and (max-width: 767px) {
-  .Icon {
-    width: 30px;
+@media only screen and (max-width: 950px) {
+  .searchBarContainer {
+    width: 90%;
+    padding-right: 16px;
     }
 }
