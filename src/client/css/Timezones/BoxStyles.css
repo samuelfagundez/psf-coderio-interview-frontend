@@ -1,3 +1,9 @@
+.flex4theBox {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
 .boxContainer {
   width: 230px;
   height: 135px;
@@ -8,7 +14,9 @@
   flex-direction: column;
   align-items: flex-end;
   padding: 7px 10px 7px 7px;
-
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
 }
 
 .boxDataContainer {
