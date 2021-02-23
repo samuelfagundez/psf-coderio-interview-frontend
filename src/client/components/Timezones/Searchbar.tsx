@@ -6,6 +6,7 @@ const Searchbar = (props: { timezones: Timezone[] }) => {
 
     return (
         <div className="searchBarContainer">
+            <i className="fa fa-search icon"></i> 
             <input placeholder="Insert a timezone..." className="inputTimezone" />
         </div>
     )

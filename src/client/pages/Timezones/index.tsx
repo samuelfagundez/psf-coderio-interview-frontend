@@ -7,7 +7,7 @@ import '../../css/Timezones/PageStyles.css'
 const Timezones = () => {
 
     const [timezones, setTimezones] = useState<Timezone[]>([])
-    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([])
+    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([{name: 'micasa', timezone: { date: '15/02/2021', time: '12:32 PM'}}])
 
     return (
         <>
