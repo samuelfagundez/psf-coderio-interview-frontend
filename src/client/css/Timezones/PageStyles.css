@@ -1,0 +1,13 @@
+.TimezonesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .Icon {
+    width: 30px;
+    }
+}

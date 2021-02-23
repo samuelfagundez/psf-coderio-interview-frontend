@@ -1,0 +1,31 @@
+.searchBarContainer {
+    height: 48px;
+    width: 35%;
+    margin-bottom: 100px;
+}
+
+.inputTimezone {
+    width: 100%;
+    height: 100%;
+    background: #E0E0E0;
+    margin: 0;
+    padding: 1px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 19px;
+}
+
+.inputTimezone::placeholder {
+    font-size: 16px;
+}
+
+.inputTimezone:focus {
+    border: 1px solid orange;
+    outline: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .Icon {
+    width: 30px;
+    }
+}
