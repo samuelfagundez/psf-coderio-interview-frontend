@@ -10,8 +10,10 @@ const Timezones = () => {
     const timezonesService = useContext(AxiosInstanceContext)
     const [timezones, setTimezones] = useState<Timezone[]>([])
     const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([])
+    const [clock, setClock] = useState(false)
 
     useEffect(() => {
+        setTimeout(() => setClock(!clock), 5000)
         timezonesService.get('/timezones')
         .then((res) => setTimezones(res.data))
         .catch((err) => console.log('Not possible to retrieve the Timezones now, error: ', err))
@@ -20,7 +22,7 @@ const Timezones = () => {
         .then((res) => setSelectedTimezones(res.data))
         .catch((err) => console.log('Not possible to retrieve the Stored Timezones now, error: ', err))
         // eslint-disable-next-line
-    }, [])
+    }, [clock])
 
     const removeTimezoneHandler = (name: string) => {
 
