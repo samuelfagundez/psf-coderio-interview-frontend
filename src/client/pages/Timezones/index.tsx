@@ -9,7 +9,7 @@ const Timezones = () => {
 
     const timezonesService = useContext(AxiosInstanceContext)
     const [timezones, setTimezones] = useState<Timezone[]>([])
-    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([])
+    const [selectedTimezones, setSelectedTimezones] = useState<Timezone[]>([{name: 'aaaa', timezone:{ date: 'aaa', time: 'aaa'}}])
 
     useEffect(() => {
         timezonesService.get('/timezones')
