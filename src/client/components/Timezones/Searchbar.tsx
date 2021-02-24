@@ -11,6 +11,7 @@ const Searchbar = (props: { timezones: Timezone[], setSelectedTimezones: Dispatc
 
     useEffect(() => {
         setTimezones(props.timezones)
+        if(searchTextfield) setFilteredTimezones(props.timezones.filter((timezone: Timezone) => timezone.name.toLowerCase().includes(searchTextfield.toLowerCase())))
     }, [props.timezones])
 
     return (
