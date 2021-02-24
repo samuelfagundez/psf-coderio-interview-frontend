@@ -40,26 +40,28 @@
     left: 30px;
 }
 
-/* .inputTimezone:focus + .suggestionsContainer {
+.inputTimezone:focus + .suggestionsContainer {
     visibility: visible !important;
-} */
+}
+
+.suggestionsContainer:hover {
+    visibility: visible;
+}
 
 .suggestionsContainer {
     width: calc(100% - 15px);
     height: auto;
     background: white;
-    /* position: relative; */
     left: 7px;
     top: 2px;
     overflow: auto;
     max-height: 300px;
     z-index: 10;
-    /* probando */
     position: absolute;
     width: calc(35% - 20px);
     left: calc(33% + 8px);
     top: 100px;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 
