@@ -1,7 +1,7 @@
 #### Pedro Samuel Fagundez
 #### Coderio Interview Frontend
 
-## Correlo con docker:
+## Córrelo con docker:
 
 ### docker build -t timezones_app .
 
@@ -14,7 +14,7 @@ Dependiendo de tu entorno debes colocar sudo al comienzo.
 Se encarga de correr la imagen del frontend.
 Ahora tienes una instancia del frontend corriendo en el puerto 3000.
 
-## Correlo standalone
+## Córrelo standalone
 
 ### `yarn install`
 
