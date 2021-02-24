@@ -10,9 +10,3 @@
 .suggestionContainer:hover {
   background: #E8E8E8;
 }
-
-@media only screen and (max-width: 767px) {
-  .Icon {
-    width: 30px;
-    }
-}

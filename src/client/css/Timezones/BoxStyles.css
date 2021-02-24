@@ -45,9 +45,3 @@
 .fa-times {
     cursor: pointer;
 }
-
-@media only screen and (max-width: 767px) {
-  .Icon {
-    width: 30px;
-    }
-}
