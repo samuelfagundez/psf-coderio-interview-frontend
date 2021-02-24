@@ -8,7 +8,7 @@
 Dependiendo de tu entorno debes colocar sudo al comienzo.
 Se encarga de crear la imagen del frontend.
 
-### docker run --name timezones_app -d -p 3000:3000 timezones_app:latest
+### docker run --name timezones_app -p 3000:3000 timezones_app:latest
 
 Dependiendo de tu entorno debes colocar sudo al comienzo.
 Se encarga de correr la imagen del frontend.
