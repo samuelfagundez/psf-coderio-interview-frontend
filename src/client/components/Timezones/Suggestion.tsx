@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import React from 'react'
 import '../../css/Timezones/SuggestionStyles.css'
 
 const Suggestion = (props: { name: string, addTimezone: (name: string) => void }) => {
