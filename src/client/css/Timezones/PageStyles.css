@@ -1,0 +1,28 @@
+.TimezonesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.timezoneBoxesContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .timezoneBoxesContainer {
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+  .timezoneBoxesContainer {
+    display: flex;
+    }
+}

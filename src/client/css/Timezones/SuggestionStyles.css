@@ -1,0 +1,12 @@
+.suggestionContainer {
+  height: 45px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.suggestionContainer:hover {
+  background: #E8E8E8;
+}
