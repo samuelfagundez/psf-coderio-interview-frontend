@@ -18,7 +18,7 @@ Ahora tienes una instancia del frontend corriendo en el puerto 3000.
 
 ### `yarn install`
 
-Debes ejecutarlo instalar los paquetes necesarios en el proyecto.
+Debes ejecutarlo para instalar los paquetes necesarios en el proyecto.
 
 ### `yarn start`
 
